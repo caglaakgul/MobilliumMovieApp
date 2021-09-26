@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mobillium Movie App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="try_again">Try Again!</string>
+
+    <string name="base_image_url">https://image.tmdb.org/t/p/w500%s</string>
+    <string name="text_with_bullet">\u25CF</string>
+    <string name="text_average_vote"><font color='#2B2D42'>%s</font><font color='#ADB5BD'>/10</font></string>
+
+</resources>

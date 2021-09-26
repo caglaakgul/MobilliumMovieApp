@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieFragment">
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.mobillium.movieapp.ui.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_movieFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.mobillium.movieapp.ui.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+
+        <argument
+            android:name="overview"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="originalTitle"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="releaseDate"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="voteAverage"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="backdropPath"
+            app:nullable="true"
+            app:argType="string" />
+    </fragment>
+</navigation>
